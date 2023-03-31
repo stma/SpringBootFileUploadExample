@@ -5,14 +5,14 @@
     <title>Profiles</title>
 </head>
 <body>
-  <h2>Profiles</h2>
-  <ul>
-    <li data-th-each="profile : ${profiles}">
-      <p data-th-text="${profile.id}"></p>
-      <p data-th-text="${profile.name}"></p>
-      <img data-th-src="@{/profiles/img/{id}(id=${profile.id})}" alt="profile picture" />
-    </li>
-  </ul>
+    <h2>Profiles</h2>
+    <ul>
+        <li data-th-each="profile : ${profiles}">
+            <p data-th-text="${profile.id}"></p>
+            <p data-th-text="${profile.name}"></p>
+            <img data-th-src="@{/profiles/img/{id}(id=${profile.id})}" alt="profile picture"/>
+        </li>
+    </ul>
 
     <p>
         <a data-th-href="@{/profiles/new}">new profile</a>
